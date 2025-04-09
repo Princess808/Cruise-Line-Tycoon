@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruise Line Tycoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>Cruise Line Tycoon</h1>
+            <p>Build your cruise empire and dominate the seas!</p>
+            <button id="start-btn">Start Game</button>
+            <button id="how-to-play-btn">How to Play</button>
+        </div>
+
+        <div id="how-to-play-screen" class="screen hidden">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Click on the ocean to deploy cruise ships</li>
+                <li>Earn money from happy passengers</li>
+                <li>Upgrade your ships to attract more passengers</li>
+                <li>Expand your fleet to become the ultimate cruise tycoon!</li>
+            </ul>
+            <button id="back-btn">Back to Menu</button>
+        </div>
+
+        <div id="game-screen" class="screen hidden">
+            <div id="game-ui">
+                <div id="stats">
+                    <div>Money: $<span id="money">1000</span></div>
+                    <div>Passengers: <span id="passengers">0</span></div>
+                    <div>Reputation: <span id="reputation">50</span>/100</div>
+                </div>
+                <div id="controls">
+                    <button id="buy-ship">Buy Cruise Ship ($500)</button>
+                    <button id="upgrade-ship">Upgrade Ship ($300)</button>
+                    <button id="advertise">Advertise ($200)</button>
+                </div>
+            </div>
+            <canvas id="game-canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
